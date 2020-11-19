@@ -162,17 +162,13 @@ Avoiding breakout rooms for the task, since it's not likely to be a huge group.
 
 ## Pre-workshop prep: 
 
-Ask people: 
-
+Asked people on slack:
 * Does everyone have git things set up on their comps? 
 * Does everyone have a github account?
 * What are folks' usernames?
-* Do I need to have a setup drop-in? What time would suit?
+* Asked for anyone who can't attend's favourite paper suggestions & summary info ready in the draft blogpost as an example & keep them included.
 
-* Have anyone who can't attend's favourite paper suggestions & summary info ready in the draft blogpost as an example & keep them included.
-
-* Pull together info on how to install git, basic github features, ?how to navigate the lab website repo?
-* Send out this info. 
+I also told folks I'm available for drop-in setup help on Monday 23rd, Tues 24th & Thursday 26th from 1800.
 
 ## TODO SAM: 
 
@@ -185,8 +181,8 @@ Ask people:
 
 - [x] FLIC: set up repo & slide deck 
 - [x] FLIC: send Sam the notes from this meeting. 
-- [ ] FLIC: make & send out pre-workshop info to folks by Thursday morning (19th). 
-- [ ] FLIC: set up a pre-workshop drop-in for after setup info sent out
+- [x] FLIC: make & send out pre-workshop info to folks by Thursday morning (19th). 
+- [x] FLIC: set up a pre-workshop drop-in for after setup info sent out
 - [ ] FLIC: slides about intro
 - [ ] FLIC: slides about workflow
 - [ ] FLIC: slides about issue tickets
