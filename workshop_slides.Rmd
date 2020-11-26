@@ -34,7 +34,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 This is a `.html` presentation created in `R Markdown` with `ioslides`. 
 
-(It's been written in a .Rmd file, and we generated .html slides by 'knitting' it in Rstudio.)
+(It's been written in a [.Rmd](http://rmarkdown.rstudio.com) file, and we generated .html slides by 'knitting' it in Rstudio.)
 
 You can check out the code used to make these slides at the [Workshop repo](https://github.com/FlicAnderson/20201127-gitflow-workshop) on Github, and adapt it for your own presentations if you like - we've got a MIT Licence on the repo, which means: 
 
@@ -42,87 +42,52 @@ You can check out the code used to make these slides at the [Workshop repo](http
 
 Source: [tl;drLegal](https://tldrlegal.com/license/mit-license)
 
-## R Markdown
+## TODO SAM: 
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+- [x] SAM: will message the lab about 'favourite paper' & 1-line summaries of how it's informed/related to your work 
 
 <div class="red2">
-This text is red
+- [ ] SAM: Slides about branching
+- [ ] SAM: Slides about paper workflow
+- [ ] SAM: Slides about troubleshooting
 </div>
 
-## Two Column Slide
+## TODO FLIC: 
 
-<div class="columns-2">
-  ![](http://felicityanderson.co.uk/sites/default/files/inline-images/Flic_400x400.jpg)
+- [x] FLIC: set up repo & slide deck 
+- [x] FLIC: send Sam the notes from this meeting. 
+- [x] FLIC: make & send out pre-workshop info to folks by Thursday morning (19th). 
+- [x] FLIC: set up a pre-workshop drop-in for after setup info sent out
+- [x] FLIC: make blogpost on my fork of lab website for workshop
+- [x] FLIC: slides about intro
 
-  - Bullet 1
-  - Bullet 2
-  - Bullet 3
-  
-  Content will flow across the columns; make sure image has sufficient height to force text to the other side of the slide.
-  
+<div class="red2">
+- [ ] FLIC: slides about task
+- [ ] FLIC: slides about workflow
+- [ ] FLIC: slides about issue tickets
 </div>
-
-## Slide with Bullets
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-## All Content In This Slide Centred {.flexbox .vcenter}
-
-test test test
-
-More centred text
-
-## Slide w/ Centred Text 
-Some non-centred text...
-
-
-<div class="centered">
-...BUT this text is centered.
-</div
-
-## Slide with R Output
-
-```{r cars, echo = TRUE}
-summary(cars)
-```
-
-## Slide with Plot
-
-```{r pressure}
-plot(pressure)
-```
-
-----
-
-![Picture of Flic As An Example Picture](https://avatars3.githubusercontent.com/u/5812129?s=400&u=e326c707842021a7d2cc89edee55d362b2f57ff6&v=4)
-
-\#ItsMySlideshowAndIllDoWhatIWant
-
-# Workshop format: 
-
-1 hour, zoom
-
-slides: html markdown in a repo!
-
-Maybe record it (or parts of it, such as workflow chat) for future reference?
-
-Avoiding breakout rooms for the task, since it's not likely to be a huge group.
 
 # Outline: 
 
 ## Outline: 
 
-* 15min intro (FLIC) 
-* 10-15min start task! Keep it very simple. (FLIC) 
-* 10min issue tickets & tagging them & stuff (FLIC) 
-* 10min branching! tying into how the lab website works (SAM) 
-* last 10 mins or so: troubleshooting: (SAM) 
-* (any time left?) Questions?
+* 15 min - Intro to Git, GitHub & The Git Workflow (FLIC) 
+* 10-15 min - Favourite Papers Lab Website Task (FLIC) 
+* 10 min - Issue Tickets, Bells & Whistles (FLIC) 
+* 10 min - Branching & Writing Papers (SAM) 
+* 10 min - Troubleshooting: (SAM) 
+* Questions
+
+## Outline: 
+
+* Intro to Git, GitHub  (FLIC) 
+* The Git Workflow (FLIC) 
+* Favourite Papers Lab Website Task (FLIC) 
+* Issue Tickets, Bells & Whistles (FLIC) 
+* Branching 
+* Writing Papers (SAM) 
+* Troubleshooting: (SAM) 
+* Questions
 
 # Intro:
 
@@ -156,20 +121,48 @@ git commit -m "..."
 
 ## How/When To Pull Request
 
-Fork, Branch, Edit, Add, Commit, Push, Pull Request.
+Fork, Clone, Branch, Edit, Add, Commit, Push, Pull Request
 
-## Task
+## Favourite Papers Task
 
-* 10-15min start task! Keep it very simple. (FLIC) 
- Task: "Add your favourite paper & 1-line summary to a blog post on the lab website" - shows basics of fork/branch/change/PR etc
-  - We will knock up a framework blog post 
-  - people have to fork the blog post 
-  - then make 'issue branch'
-  - then edit the blog post to include their favourite paper they've read lately & how it relates to / informs their work 
-  - then make pull request
-  - we then accept & merge to 'staging' branch
-  - check & discuss the blog post.
-  - any fixes required? (make issue tickets, lead on to next session)
+**Task:** "Add your favourite paper & 1-line summary to a blog post on the lab website"
+
+**Aim:** practise the basics of fork/branch/change/PR et & make an interesting blog post!
+
+The [Wallace lab website](https://ewallace.github.io/) is built from a github repository, and uses [GitHub Pages](https://pages.github.com/) to build the website HTML/CSS from the files in a GitHub repository & hosts them online.
+
+Our task is to add favourite-paper info to the blog post file using the git workflow so we can publish it to the website.
+
+## Flic's Task Setup | *Fork, Clone, Branch, Edit, Add, Commit, Push, Pull Request*
+
+* `forked` (made a copy of) Edward's website repo on GitHub 
+* `cloned` the forked repository (downloaded the github copy to her local computer)
+* made a `branch` for her changes called "workshop-blogpost"
+* created and `edited` a blog post file: "blog/_posts/2020-11-26-favourite-papers.md"
+* `added` this file to her 'staging area' locally
+* written a `commit` message to explain her changes
+* `pushed` her changes up to her copy of the repo on GitHub
+* (no `pull request` yet, we're ready to collaborate!)
+
+## Favourite Papers Steps | *Fork, Clone, Branch, Edit, Add, Commit, Push, Pull Request*
+
+* fork my fork in github (it copies all branches)
+* make branch (e.g."sams-favourite-paper")
+* make edits to "blog/_posts/2020-11-26-favourite-papers.md"
+* git add blog file
+* git commit blog file with helpful message
+* git push to their github (to remote)
+* check on github the changes are there
+* make pull request to my fork (check the branch)
+
+## Favourite Papers Next Steps | *Pull Request & Merge*
+
+I accept them, merge them, we party
+
+I submit pull request to Edward's original repo staging branch
+
+Edward checks the blog post & merges the changes to `master` branch
+ ...publishing the blogpost!
 
 ## Issue Tickets 
 
@@ -207,32 +200,3 @@ Fork, Branch, Edit, Add, Commit, Push, Pull Request.
 * (any time left?) Questions?
   - if any additional practical Qs, could set up a work-through-it time?
   - if any conceptual questions etc, try and answer in time left.
-
-## Pre-workshop prep: 
-
-Asked people on slack:
-* Does everyone have git things set up on their comps? 
-* Does everyone have a github account?
-* What are folks' usernames?
-* Asked for anyone who can't attend's favourite paper suggestions & summary info ready in the draft blogpost as an example & keep them included.
-
-I also told folks I'm available for drop-in setup help on Monday 23rd, Tues 24th & Thursday 26th from 1800.
-
-## TODO SAM: 
-
-- [x] SAM: will message the lab about 'favourite paper' & 1-line summaries of how it's informed/related to your work 
-- [ ] SAM: Slides about branching
-- [ ] SAM: Slides about paper workflow
-- [ ] SAM: Slides about troubleshooting
-
-## TODO FLIC: 
-
-- [x] FLIC: set up repo & slide deck 
-- [x] FLIC: send Sam the notes from this meeting. 
-- [x] FLIC: make & send out pre-workshop info to folks by Thursday morning (19th). 
-- [x] FLIC: set up a pre-workshop drop-in for after setup info sent out
-- [x] FLIC: make blogpost on my fork of lab website for workshop
-- [ ] FLIC: slides about intro
-- [ ] FLIC: slides about workflow
-- [ ] FLIC: slides about issue tickets
-
