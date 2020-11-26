@@ -117,7 +117,15 @@ Include a picture
 
 ## How To Write A Good Commit Message
 
-git commit -m "..."
+`git commit -m "..."`
+
+Be consise & consistent!
+
+* WHAT did you do (e.g. fix, rework, add, update)
+* WHERE (e.g. filename, function name, section of paper, variable)
+
+`git commit -m "add Flic's favourite paper to '2020-11-26-favourite-papers.md'"`
+
 
 ## How/When To Pull Request
 
