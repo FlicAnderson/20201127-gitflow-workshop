@@ -1,7 +1,7 @@
 ---
 title: "Wallace Lab Git Workshop"
 author: "Flic Anderson & Sam Haynes"
-date: "19/11/2020"
+date: "26/11/2020"
 output:
   ioslides_presentation:
     logo: https://assets.stickpng.com/images/5847f981cef1014c0b5e48be.png
@@ -11,11 +11,36 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## HOW TO USE THIS 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
-This is a template slideshow created in R Markdown with ioslides. To generate the .html slides, knit it in Rstudio. 
+<script>
+    $(document).ready(function() {
+      $('slide:not(.title-slide, .backdrop, .segue)').append('<footer label=\"bit.ly/wallace-lab-git\"></footer>');    
+    })
+</script>
 
-Should work. Hopefully!
+<style>
+  footer:after {
+    content: attr(label);
+    font-size: 12pt;
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    line-height: 1.9;
+  }
+</style>
+
+## HOW TO (RE-)USE THIS MATERIAL
+
+This is a `.html` presentation created in `R Markdown` with `ioslides`. 
+
+(It's been written in a .Rmd file, and we generated .html slides by 'knitting' it in Rstudio.)
+
+You can check out the code used to make these slides at the [Workshop repo](https://github.com/FlicAnderson/20201127-gitflow-workshop) on Github, and adapt it for your own presentations if you like - we've got a MIT Licence on the repo, which means: 
+
+*"Basically, you can do whatever you want as long as you include the original copyright and license notice in any copy of the software/source."*
+
+Source: [tl;drLegal](https://tldrlegal.com/license/mit-license)
 
 ## R Markdown
 
@@ -183,6 +208,7 @@ I also told folks I'm available for drop-in setup help on Monday 23rd, Tues 24th
 - [x] FLIC: send Sam the notes from this meeting. 
 - [x] FLIC: make & send out pre-workshop info to folks by Thursday morning (19th). 
 - [x] FLIC: set up a pre-workshop drop-in for after setup info sent out
+- [x] FLIC: make blogpost on my fork of lab website for workshop
 - [ ] FLIC: slides about intro
 - [ ] FLIC: slides about workflow
 - [ ] FLIC: slides about issue tickets
