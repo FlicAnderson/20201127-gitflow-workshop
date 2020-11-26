@@ -124,16 +124,38 @@ Avoiding breakout rooms for the task, since it's not likely to be a huge group.
 * last 10 mins or so: troubleshooting: (SAM) 
 * (any time left?) Questions?
 
-## Intro
+# Intro:
 
-* 15min intro (FLIC) 
-  - git vs github
-  - uses, benefits
-  - describe the workflow
-  - "when do you push to your own repo vs someone else's?"
-  - and "when/how do you pull request", 
-  - and "what kinda thing should you put in the commit message?"
-  - including walking through the task steps
+## Git
+
+**Git** is a *version control system*. 
+
+* It doesn't copy your files, as much as keep track of all `changes` ever since you told git to `add` the file to its logs
+* Saves the changes you tell it to `commit` to its log in project-specific folders referred to as a repository, or `repo`
+* Very useful! (undo/redo, backups, switching computers, safely 'experimenting')
+
+It can be used via *Command Line* (the terminal!) or via a *Graphical User Interface* (GUI), on pretty much all systems.
+
+## GitHub
+
+**GitHub** is an *online platform* for storing your git repository. There are others (e.g. GitLab, Bitbucket).
+
+* Keep track of all your repos online - `public` or `private`
+* You can tell git to `push` its list of your file changes up to GitHub.
+* Or `pull` changes down (yours or someone else's!) and `merge` them with your local copies. 
+* Contribute to others' work via a `pull request` 
+
+## Git Workflow
+
+Include a picture
+
+## How To Write A Good Commit Message
+
+git commit -m "..."
+
+## How/When To Pull Request
+
+Fork, Branch, Edit, Add, Commit, Push, Pull Request.
 
 ## Task
 
