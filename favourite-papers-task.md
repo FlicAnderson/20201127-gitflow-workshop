@@ -235,14 +235,140 @@ Git now 'knows' that our file has been modified, but it isn't yet officially 're
 
 If you wanted to make another change to the file you still could, at this point.  You'd just want to make sure you ran `git add blog/_posts/2020-11-26-favourite-papers.md` again to re-add it.
 
-If you wanted to UNDO your changes and go back to the original file, you can run `git reset HEAD blog/_posts/2020-11-26-favourite-papers.md` at this point.  This unstages and resets the file and basically goes back to the last 'recorded' set of changes git knows about.
+(If you wanted to UNDO your changes and go back to the original file, you can run `git reset HEAD blog/_posts/2020-11-26-favourite-papers.md` at this point.  This unstages and resets the file and basically goes back to the last 'recorded' set of changes git knows about.)
 
+- [x] git add blog file
 
+## Git Commit
 
+So the next step is to get git to officially record our changes to the blog file.  We do this by using `git commit` to commit all changes in any 'staged' files (where we've used `git add` to stage them) to its log.  Don't be afraid to commit!
 
+We want to take this opportunity to write a commit message which gives useful details about our changes. There's a slide on what to put in a good commit message, but for these purposes, we can keep it simple by mentioning WHAT we've changed (e.g. blog post `2020-11-26-favourite-papers.md`) and HOW we've changed it (e.g. "added Flic's favourite paper").
 
-- [ ] git add blog file
-- [ ] git commit blog file with helpful message
-- [ ] git push to your github (to remote)
-- [ ] check on github the changes are there
-- [ ] make pull request to Edward's repo (check it's "staging" branch)
+So we'd type something like this:
+`$ git commit -m "add Flic's favourite paper to blog 2020-11-26-favourite-papers.md"`
+The `-m` stands for "message" and will record whatever you include afterwards between the quotes as your commit message.
+
+When you run this it'll tell you what files have been changed, and whether there's insertions or deletions and so on.
+
+Great!
+
+- [X] git commit blog file with helpful message
+
+## Git Push
+
+Our last commandline step is to push our recorded changes up to our GitHub repository from our local computer.  
+
+So far, if we deleted the `ewallace.github.io` folder, we'd lose ALL our work, because the repository changelog file would also get deleted, which would SUCK. Sam knows about this!
+
+The benefit of using `git` AND `GitHub` is that you can have a remote copy of your repo which keeps everything safe from accidential deletion.
+
+But things aren't automagically stored in GitHub when you make your changes in the local repo.  You could check this by looking back at your GitHub page for your fork of the repository.  You'll see that it doesn't contain your recent edits in the files, and your latest commit message doesn't appear anywhere.
+
+To get those changes to propogate up the pipe, we use `git push`.
+
+This will PUSH the changes from our current branch UP to the equivalent branch (if it exists yet) on GitHub.
+
+We can have a go by typing:
+`$ git push`
+from our terminal.
+
+BUT!
+
+You can see a FATAL error:
+
+```
+fanders6@ceres:~/ewallace.github.io$ git push
+fatal: The current branch favourite-papers-flic-53 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin favourite-papers-flic-53
+```
+What's all this "no upstream branch" business about?
+
+Well, we created the branch `favourite-papers-flic-53` locally from our terminal, so it only exists on the computer in front of us.  It hasn't been connected with an equivalent branch on GitHub because there isn't one of that name on there.
+
+Helpfully, git provides exactly what we need to type next to resolve this issue:
+`$ git push --set-upstream origin favourite-papers-flic-53`
+So we type that, press enter, and are asked for our GitHub Username, and our GitHub Password.
+
+NOTE: if you're not used to using a terminal, be aware that when it comes to typing in your passwords, it won't show the characters you type on the screen as you type them, so you have to kind of go by feel.  
+
+If you know you've typed the wrong character, backspace MORE THAN YOU THINK YOU NEED TO, and start again from scratch to avoid any counting on fingers and guessing :D
+
+If you get it wrong and aren't authorised, you can just re-run the command (pressing the arrow keys in the terminal allows you to re-use previous commands, handy!) and try again.
+
+Your output might look something like this:
+```
+fanders6@ceres:~/ewallace.github.io$ git push --set-upstream origin favourite-papers-flic-53
+Username for 'https://github.com': FlicAnderson
+Password for 'https://FlicAnderson@github.com':
+Counting objects: 5, done.
+Delta compression using up to 16 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 457 bytes | 457.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'favourite-papers-flic-53' on GitHub by visiting:
+remote:      https://github.com/FlicAnderson/ewallace.github.io/pull/new/favourite-papers-flic-53
+remote:
+To https://github.com/FlicAnderson/ewallace.github.io.git
+ * [new branch]      favourite-papers-flic-53 -> favourite-papers-flic-53
+Branch 'favourite-papers-flic-53' set up to track remote branch 'favourite-papers-flic-53' from 'origin'.
+```
+
+Running that command has made a new branch on GitHub to track our local branch changes in, and also pushed our changes, but after the `set-upstream` bit has been done the first time, you're free to just use the shorter version of:
+`$ git push`
+without any additional bits or pieces, and it'll push up to GitHub no problem.
+
+NICE!
+
+- [x] git push to your github (to remote)
+
+## Check On GitHub
+
+Now we want to double-check that the `git push` has worked, so we go back to GitHub in our browser, back to our forked repository page, and look for signs of change.
+
+At this point you might not see anything new, and be discouraged - DON'T WORRY! - this is probably because you're still viewing the `master` branch, and now we can select our newly created branch in the drop-down menu: e.g. `favourite-papers-flic-53`.
+
+Once you've selected the correct branch, you'll see those changes show up.
+
+Good work!
+
+- [x] check on github the changes are there
+
+## Pull Request
+
+And now the moment of truth.  We want to get our changes from OUR fork into Edward's original repo.
+
+We do that using a `pull request` which is best done through GitHub, rather than any complicated terminal stuff (although no doubt it's possible - with git, all things are possible!).
+
+You may have noticed a huge green button saying "Compare and Pull Request" in your new favourite paper branch on your fork. CLICK IT!
+
+This will take you to a page titled "Open a pull request".
+
+There are some drop down boxes we need to pay attention to, and a big text box, similar to an issue ticket.
+
+At the top, we want to make sure:
+
+* that our `base repository` (ie the repo we want to send our changes to, Edward's original repo) says "ewallace/ewallace.github.io".
+* `base` next to that says "staging" - this is the branch we want our changes to be added to.  In the case of the lab website, we always want to add things to the `staging` branch, so that they can be checked over before publishing. This is another "just in case" step that helps keep everything running smoothly.
+* after the arrow, representing OUR repo, is `head repository`, which should have the name of your fork (e.g. "FlicAnderson/ewallace.github.io").
+* `compare` represents the branch we've made our changes in (e.g "favourite-papers-flic-53")
+
+Ensure that the text below says "Able to merge".  This will mean that the changes can be successfully added and merged with those in the main repository & don't overwrite any other changes!  
+
+Below, add a bit of information about the changes that are included in your pull request, and think about mentioning what you've changed, and how.
+
+Then, press the big green "Create Pull Request" button!
+
+You've done it!
+
+- [x] make pull request to Edward's repo (check it's "staging" branch).
+
+## Next steps
+
+Now you've created your successful pull request, Edward can review the changes, merge them with the changes in the original repository, and then publish the blog post! YAY!
+
+![](images/partycat.png)
