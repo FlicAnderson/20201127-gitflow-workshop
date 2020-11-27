@@ -168,7 +168,7 @@ Fear not! There's a first time for all of us.
 
 Here's how to get started!
 
-[Bitly Link]()
+[Bitly Link](TBC)
 
 # Favourite Papers Task
 
@@ -185,7 +185,7 @@ Here's how to get started!
 
 ## Favourite Papers Steps | *Fork, Clone, Branch, Edit, Add, Commit, Push, Pull Request*
 
-[Bitly Link]()
+[Bitly Link](TBC)
 
 ## Favourite Papers Next Steps | *Check Pull Request & Merge*
 
@@ -193,6 +193,13 @@ Edward checks the blog post & merges the changes to `master` branch
  ...publishing the blogpost!
  
 PARTY!
+<div class="centered">
+```{r, out.width = "200"}
+knitr::include_graphics("https://i.kym-cdn.com/entries/icons/original/000/005/517/party-cat-party-time.jpg")
+``` 
+</div>
+
+* http://nedroid.com/2009/05/party-cat-full-series/
 
 ## Issue Tickets 
 
