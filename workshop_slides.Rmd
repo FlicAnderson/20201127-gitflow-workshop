@@ -42,41 +42,7 @@ You can check out the code used to make these slides at the [Workshop repo](http
 
 Source: [tl;drLegal](https://tldrlegal.com/license/mit-license)
 
-## TODO SAM: 
-
-- [x] SAM: will message the lab about 'favourite paper' & 1-line summaries of how it's informed/related to your work 
-
-<div class="red2">
-- [ ] SAM: Slides about branching
-- [ ] SAM: Slides about paper workflow
-- [ ] SAM: Slides about troubleshooting
-</div>
-
-## TODO FLIC: 
-
-- [x] FLIC: set up repo & slide deck 
-- [x] FLIC: send Sam the notes from this meeting. 
-- [x] FLIC: make & send out pre-workshop info to folks by Thursday morning (19th). 
-- [x] FLIC: set up a pre-workshop drop-in for after setup info sent out
-- [x] FLIC: make blogpost on my fork of lab website for workshop
-- [x] FLIC: slides about intro
-
-<div class="red2">
-- [ ] FLIC: slides about task
-- [ ] FLIC: slides about workflow
-- [ ] FLIC: slides about issue tickets
-</div>
-
 # Outline: 
-
-## Outline: 
-
-* 15 min - Intro to Git, GitHub & The Git Workflow (FLIC) 
-* 10-15 min - Favourite Papers Lab Website Task (FLIC) 
-* 10 min - Issue Tickets, Bells & Whistles (FLIC) 
-* 10 min - Branching & Writing Papers (SAM) 
-* 10 min - Troubleshooting: (SAM) 
-* Questions
 
 ## Outline: 
 
@@ -84,7 +50,7 @@ Source: [tl;drLegal](https://tldrlegal.com/license/mit-license)
 * The Git Workflow (FLIC) 
 * Favourite Papers Lab Website Task (FLIC) 
 * Issue Tickets, Bells & Whistles (FLIC) 
-* Branching 
+* Branching (SAM)
 * Writing Papers (SAM) 
 * Troubleshooting: (SAM) 
 * Questions
@@ -111,9 +77,32 @@ It can be used via *Command Line* (the terminal!) or via a *Graphical User Inter
 * Or `pull` changes down (yours or someone else's!) and `merge` them with your local copies. 
 * Contribute to others' work via a `pull request` 
 
+## Git Workflow {.flexbox .vcenter}
+
+Fork
+
+Clone
+
+Branch
+
+Edit
+
+Add
+
+Commit
+
+Push
+
+Pull Request
+
+
 ## Git Workflow
 
-Include a picture
+<div class="centered">
+```{r, out.width = "650"}
+knitr::include_graphics("https://res.cloudinary.com/practicaldev/image/fetch/s--M_fHUEqA--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/128hsgntnsu9bww0y8sz.png")
+``` 
+</div>
 
 ## How To Write A Good Commit Message
 
@@ -125,11 +114,6 @@ Be consise & consistent!
 * WHERE (e.g. filename, function name, section of paper, variable)
 
 `git commit -m "add Flic's favourite paper to '2020-11-26-favourite-papers.md'"`
-
-
-## How/When To Pull Request
-
-Fork, Clone, Branch, Edit, Add, Commit, Push, Pull Request
 
 ## Favourite Papers Task
 
@@ -168,13 +152,14 @@ Fear not! There's a first time for all of us.
 
 Here's how to get started!
 
-[Bitly Link](TBC)
+[Bitly Link bit.ly/fave-papers-forking](https://bit.ly/fave-papers-forking)
 
 # Favourite Papers Task
 
 ## Favourite Papers Steps | *Fork, Clone, Branch, Edit, Add, Commit, Push, Pull Request*
 
 * fork the website in github (it copies all branches)
+* clone (download) the fork to your local computer
 * make branch (e.g."sams-favourite-paper")
 * make edits to "blog/_posts/2020-11-26-favourite-papers.md"
 * git add blog file
@@ -185,7 +170,7 @@ Here's how to get started!
 
 ## Favourite Papers Steps | *Fork, Clone, Branch, Edit, Add, Commit, Push, Pull Request*
 
-[Bitly Link](TBC)
+[Bitly Link: bit.ly/favourite-papers-task](https://bit.ly/favourite-papers-task)
 
 ## Favourite Papers Next Steps | *Check Pull Request & Merge*
 
@@ -200,6 +185,8 @@ knitr::include_graphics("https://i.kym-cdn.com/entries/icons/original/000/005/51
 </div>
 
 * http://nedroid.com/2009/05/party-cat-full-series/
+
+# Issue Tickets 
 
 ## Issue Tickets 
 
@@ -225,7 +212,7 @@ knitr::include_graphics("https://i.kym-cdn.com/entries/icons/original/000/005/51
 
 <div class="centered">
 ```{r, out.width = "700"}
-knitr::include_graphics("./images/branching_image.svg")
+knitr::include_graphics("https://github.com/FlicAnderson/20201127-gitflow-workshop/tree/main/images/branching_image.svg")
 ``` 
 </div>
 
@@ -368,6 +355,3 @@ GitHub Guides
 
 ## Questions
 
-* (any time left?) Questions?
-  - if any additional practical Qs, could set up a work-through-it time?
-  - if any conceptual questions etc, try and answer in time left.
