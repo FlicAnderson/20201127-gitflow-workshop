@@ -42,31 +42,6 @@ You can check out the code used to make these slides at the [Workshop repo](http
 
 Source: [tl;drLegal](https://tldrlegal.com/license/mit-license)
 
-## TODO SAM: 
-
-- [x] SAM: will message the lab about 'favourite paper' & 1-line summaries of how it's informed/related to your work 
-
-<div class="red2">
-- [ ] SAM: Slides about branching
-- [ ] SAM: Slides about paper workflow
-- [ ] SAM: Slides about troubleshooting
-</div>
-
-## TODO FLIC: 
-
-- [x] FLIC: set up repo & slide deck 
-- [x] FLIC: send Sam the notes from this meeting. 
-- [x] FLIC: make & send out pre-workshop info to folks by Thursday morning (19th). 
-- [x] FLIC: set up a pre-workshop drop-in for after setup info sent out
-- [x] FLIC: make blogpost on my fork of lab website for workshop
-- [x] FLIC: slides about intro
-- [x] FLIC: slides about issue tickets
-
-<div class="red2">
-- [x] FLIC: slides about task
-- [x] FLIC: slides about workflow
-</div>
-
 # Outline: 
 
 ## Outline: 
