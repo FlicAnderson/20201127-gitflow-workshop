@@ -144,33 +144,55 @@ Our task is to add favourite-paper info to the blog post file using the git work
 ## Flic's Task Setup | *Fork, Clone, Branch, Edit, Add, Commit, Push, Pull Request*
 
 * `forked` (made a copy of) Edward's website repo on GitHub 
-* `cloned` the forked repository (downloaded the github copy to her local computer)
-* made a `branch` for her changes called "workshop-blogpost"
+* `cloned` the forked repository (downloaded the github copy to my local computer)
+* made a `branch` for my changes called "workshop-blogpost"
 * created and `edited` a blog post file: "blog/_posts/2020-11-26-favourite-papers.md"
-* `added` this file to her 'staging area' locally
-* written a `commit` message to explain her changes
-* `pushed` her changes up to her copy of the repo on GitHub
+* `added` this file to my 'staging area' locally
+* written a `commit` message to explain my changes
+* `pushed` my changes up to my copy of the repo on GitHub
 * (no `pull request` yet, we're ready to collaborate!)
+
+# Hang On A Minute!
+
+## Are You Already Forked?
+
+If you already have a fork of the lab website, there's an extra step to make sure you've got the latest changes in Edward's original repo!
+
+I made a helpsheet! 
+
+[Bitly Link]()
+
+## New To Forking?
+
+Fear not! There's a first time for all of us.
+
+Here's how to get started!
+
+[Bitly Link]()
+
+# Favourite Papers Task
 
 ## Favourite Papers Steps | *Fork, Clone, Branch, Edit, Add, Commit, Push, Pull Request*
 
-* fork my fork in github (it copies all branches)
+* fork the website in github (it copies all branches)
 * make branch (e.g."sams-favourite-paper")
 * make edits to "blog/_posts/2020-11-26-favourite-papers.md"
 * git add blog file
 * git commit blog file with helpful message
-* git push to their github (to remote)
+* git push to your github (to remote)
 * check on github the changes are there
-* make pull request to my fork (check the branch)
+* make pull request to Edward's repo (check it's "staging" branch)
 
-## Favourite Papers Next Steps | *Pull Request & Merge*
+## Favourite Papers Steps | *Fork, Clone, Branch, Edit, Add, Commit, Push, Pull Request*
 
-I accept them, merge them, we party
+[Bitly Link]()
 
-I submit pull request to Edward's original repo staging branch
+## Favourite Papers Next Steps | *Check Pull Request & Merge*
 
 Edward checks the blog post & merges the changes to `master` branch
  ...publishing the blogpost!
+ 
+PARTY!
 
 ## Issue Tickets 
 
