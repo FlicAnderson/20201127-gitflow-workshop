@@ -16,10 +16,55 @@ Alternatively you can check in your list of repositories, accessible from the to
 
 ![]()
 
+If you already have a fork of the lab website, there's an extra step to make sure you've got the latest changes in Edward's original repo!
+
+Do you have a local folder called `ewallace.github.io`?  
 
 ## On Commandline Git
 
+If you DON'T have a folder called `ewallace.github.io`, you probably haven't `cloned` your fork of the repository yet. From your home folder, or wherever you want the repository to go:
+`git clone https://github.com/FlicAnderson/ewallace.github.io.git`
+BUT, remember to replace the URL with the one you've copied from the page of your fork of the lab website on your GitHub page. 
 
+If YES, you've already done the `git clone` step.  You want to move into that folder from the git terminal (command line). You can do that using the `cd` command:
+`$ cd ewallace.github.io`
+NOTE: don't type the `$` - this is commonly used when showing code to represent the command 'prompt' and let you know to type what comes afterwards.
+
+Swap to the `master` branch using the command `git checkout` followed by the name of the branch you want to switch to. You can usually use tab to autocomplete after typing the first few letters.
+`$ git checkout master`
+
+Check whether you have a `remote` set up for this branch. You can do this using the command:
+`$ git remote --v`
+The `--v` stands for 'view'. You might expect to see the URL for your fork there.
+
+Next we want to add the original repo as another remote (ie we want to connect our local repo to the 'remote' one on GitHub to be able to see all the recent new changes).
+We can do this using the following command (and we're nicknaming the original lab website repo as "upstream"):
+`$ git remote add upstream https://github.com/ewallace/ewallace.github.io.git`
+
+We then want to `fetch` the latest changes from the original lab website repo to make sure we're up to date and can access the blog post. We can use `git fetch` followed by the name of the 'remote' location we want to get them from.
+`$ git fetch upstream`
+NOTE: this is similar to using `git pull` to get changes, but it doesn't automatically `git merge` any of the changes. `git fetch` just checks to see if there are any changes without doing anything about them.
+
+This means we need to follow it up with another command (after checking we're definitely on the `master` branch) to add those recent changes from the original into any changes we've got in our local repository:
+```
+# ensure we're on master branch
+$ git checkout master
+
+# apply the changes from the original repo (upstream) to our local ones
+$ git rebase upstream/master
+```
+Using `git rebase` will update my local copy with the changes made in the original repo with my changes 'on top'.  There are a few different commands to combine different sets of changes, and you will maybe never use `git rebase` again - I think this may have been the first time I've ever used it!
+
+Last but not least, we want to make sure that these combined changes (any of our local ones and any recent ones from Edward's original repo) get added to our GitHub copy, so we can see them there too!
+
+We do that by using `git push`, with a few extra arguments to the command to 'force' (`-f`) these newly combined changes up the pipe to GitHub. Here, `origin` is the name of our GitHub fork of the lab we saw listed as one of our 'remotes' earlier when we ran `git remote --v` to view them. `master` is the name of our branch.
+`$ git push -f origin master`
+
+The final thing we can do is to use `git status` to check everything is good, and we're ready to move on and get branching and editing.
+
+Remember that this is the pattern we roughly want to follow:
+
+**Fork, Clone, Branch, Edit, Add, Commit, Push, Pull Request**
 
 
 ## Flic's Example:
