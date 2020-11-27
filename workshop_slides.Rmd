@@ -46,15 +46,6 @@ Source: [tl;drLegal](https://tldrlegal.com/license/mit-license)
 
 ## Outline: 
 
-* 15 min - Intro to Git, GitHub & The Git Workflow (FLIC) 
-* 10-15 min - Favourite Papers Lab Website Task (FLIC) 
-* 10 min - Issue Tickets, Bells & Whistles (FLIC) 
-* 10 min - Branching & Writing Papers (SAM) 
-* 10 min - Troubleshooting: (SAM) 
-* Questions
-
-## Outline: 
-
 * Intro to Git, GitHub  (FLIC) 
 * The Git Workflow (FLIC) 
 * Favourite Papers Lab Website Task (FLIC) 
