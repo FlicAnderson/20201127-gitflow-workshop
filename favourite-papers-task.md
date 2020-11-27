@@ -104,7 +104,10 @@ So let's go through it step by step.
 ## Git Clone
 
 With the git command line terminal open in front of you, you want to run the following command:
-`$ git clone https://github.com/FlicAnderson/ewallace.github.io.git` BUT REPLACE MY USERNAME WITH YOURS :)
+```
+$ git clone https://github.com/FlicAnderson/ewallace.github.io.git
+```
+BUT REPLACE MY USERNAME WITH YOURS :)
 NOTE: don't type the `$` in these instructions - this represents the command prompt (you'll see a corresponding `$` on your screen, showing that the terminal is expecting you to provide input). You might see this formatting in any documentation of code, and it means you need to type whatever comes afterwards as a command into the terminal.
 
 This will clone (download) your fork (copy) of Edward's lab website repository.
@@ -144,13 +147,17 @@ So, we might want to name our branch something like "favourite-papers-flic-53", 
 When you make a branch, it copies the change log from **the branch you are currently in**, so always make sure you're in the right place or you'll end up confused later on.
 
 You can check using:
-`$  git branch`
+```
+$  git branch
+```
 This tells you which branches you've got locally, and an asterisk shows which one you're currently in.
 
 If you aren't on `master` branch, you can change branches using `git checkout [branchname]` format, to move to the branch you name after `git checkout`. e.g. `$ git checkout master`.
 
 Make the new branch using:
-`$ git branch favourite-papers-flic-53`
+```
+$ git branch favourite-papers-flic-53
+```
 
 Then (IMPORTANT!) change to that new branch using `git checkout favourite-papers-flic-53`.  If you forget and start editing in the wrong branch, it's fixable, but a hassle, so although you WILL forget in future (I do too), it's best to get into the habit of using `git status` to check where you're at frequently.
 
@@ -165,7 +172,9 @@ Once you know you're on the right branch, you can use your file browser and mous
 But you can also make your changes from the terminal using a text editor such as `nano` to open the file and add your text.  This is sometimes neccessary to do if you're working on a remote computer or server (for example trying to run things on Eddie computer cluster), where you might not have access to point and click options. But this is not THAT workshop, so do whatever you're comfortable with.
 
 Open the blog post file, which you can find at:
-`blog/_posts/2020-11-26-favourite-papers.md`
+```
+blog/_posts/2020-11-26-favourite-papers.md
+```
 
 This means it's called "2020-11-26-favourite-papers.md", and inside a "_posts" folder, which is inside the "blog" folder.
 
@@ -199,7 +208,9 @@ We do this using `git add`.
 
 We want to use `git status` to check what files have changed, and add the relevant ones to our repository change logs so they're recorded.
 
-`$ git status`
+```
+$ git status
+```
 
 This gives us input something like this:
 ```
@@ -218,7 +229,9 @@ It tells us which branch we're on, and a few hints on what we could type next.
 
 We want to add the blog post file to git's change list, so first we need to `stage` it. We do that by running:
 
-`$ git add blog/_posts/2020-11-26-favourite-papers.md`
+```
+$ git add blog/_posts/2020-11-26-favourite-papers.md`
+```
 
 If you run `git status` again, you'll now see that things have changed!
 
@@ -246,7 +259,9 @@ So the next step is to get git to officially record our changes to the blog file
 We want to take this opportunity to write a commit message which gives useful details about our changes. There's a slide on what to put in a good commit message, but for these purposes, we can keep it simple by mentioning WHAT we've changed (e.g. blog post `2020-11-26-favourite-papers.md`) and HOW we've changed it (e.g. "added Flic's favourite paper").
 
 So we'd type something like this:
-`$ git commit -m "add Flic's favourite paper to blog 2020-11-26-favourite-papers.md"`
+```
+$ git commit -m "add Flic's favourite paper to blog 2020-11-26-favourite-papers.md"
+```
 The `-m` stands for "message" and will record whatever you include afterwards between the quotes as your commit message.
 
 When you run this it'll tell you what files have been changed, and whether there's insertions or deletions and so on.
@@ -270,7 +285,9 @@ To get those changes to propogate up the pipe, we use `git push`.
 This will PUSH the changes from our current branch UP to the equivalent branch (if it exists yet) on GitHub.
 
 We can have a go by typing:
-`$ git push`
+```
+$ git push
+```
 from our terminal.
 
 BUT!
@@ -289,7 +306,9 @@ What's all this "no upstream branch" business about?
 Well, we created the branch `favourite-papers-flic-53` locally from our terminal, so it only exists on the computer in front of us.  It hasn't been connected with an equivalent branch on GitHub because there isn't one of that name on there.
 
 Helpfully, git provides exactly what we need to type next to resolve this issue:
-`$ git push --set-upstream origin favourite-papers-flic-53`
+```
+$ git push --set-upstream origin favourite-papers-flic-53
+```
 So we type that, press enter, and are asked for our GitHub Username, and our GitHub Password.
 
 NOTE: if you're not used to using a terminal, be aware that when it comes to typing in your passwords, it won't show the characters you type on the screen as you type them, so you have to kind of go by feel.  
@@ -319,7 +338,9 @@ Branch 'favourite-papers-flic-53' set up to track remote branch 'favourite-paper
 ```
 
 Running that command has made a new branch on GitHub to track our local branch changes in, and also pushed our changes, but after the `set-upstream` bit has been done the first time, you're free to just use the shorter version of:
-`$ git push`
+```
+$ git push
+```
 without any additional bits or pieces, and it'll push up to GitHub no problem.
 
 NICE!
