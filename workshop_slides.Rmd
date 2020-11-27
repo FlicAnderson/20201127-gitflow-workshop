@@ -113,7 +113,11 @@ It can be used via *Command Line* (the terminal!) or via a *Graphical User Inter
 
 ## Git Workflow
 
-Include a picture
+<div class="centered">
+```{r, out.width = "650"}
+knitr::include_graphics("https://res.cloudinary.com/practicaldev/image/fetch/s--M_fHUEqA--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/128hsgntnsu9bww0y8sz.png")
+``` 
+</div>
 
 ## How To Write A Good Commit Message
 
@@ -175,6 +179,7 @@ Here's how to get started!
 ## Favourite Papers Steps | *Fork, Clone, Branch, Edit, Add, Commit, Push, Pull Request*
 
 * fork the website in github (it copies all branches)
+* clone (download) the fork to your local computer
 * make branch (e.g."sams-favourite-paper")
 * make edits to "blog/_posts/2020-11-26-favourite-papers.md"
 * git add blog file
