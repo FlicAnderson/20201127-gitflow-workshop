@@ -366,16 +366,6 @@ GitHub Guides
 
 [https://guides.github.com/](https://guides.github.com/)
 
-## fin
-
-* 10min branching! tying into how the lab website works (SAM) 
-  - how & why to do branches
-  - how & why to check which branch you're in
-  - why does the lab website have a 'staging' branch? what's this master branch thing all about? 
-  - why do we fork the website?
-  - issue-focussed branches (e.g. if issue created in task)
-  - + 1 slide on how to workflow for a paper (Sam & Jamie's experiences)
-
 ## Questions
 
 * (any time left?) Questions?
