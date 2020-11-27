@@ -221,7 +221,152 @@ knitr::include_graphics("https://i.kym-cdn.com/entries/icons/original/000/005/51
 * add Add the most useful labels / create your own
 * check with people before randomly assigning them issues! :)
 
-## Branching & Forks
+## Branching
+
+<div class="centered">
+```{r, out.width = "700"}
+knitr::include_graphics("./images/branching_image.svg")
+``` 
+</div>
+
+## Branching
+
+The concept of branching is a combination of good coding practice and good project management. 
+
+It consists of separating projects into larger objectives and smaller, manageable tasks. 
+
+It also enables you to prototype changes in isolation, minimising risk, and provides checkpoints to quickly return to when things do go wrong.
+
+## Branching | Long vs short
+
+<b> Long Branch </b>
+
+Long branches can exist for months or are even permanent features of a repo. 
+
+They can be merged into the main branch multiple times, possibly containing updates on thousands of lines of code. 
+
+They are used to isolate large tasks or allow for gate-keeping for projects with continuous updates.
+
+Examples: Staging branch, prototyping branch, software release branch, manuscript chapter branch
+
+## Branching | Long vs short
+
+<b> Short (or Topic) Branch </b>
+
+Short branches exist for hours or weeks, they may consist of only one commit. 
+
+Once merged with the main branch or a long branch they are deleted. 
+
+They enclose small changes in code and separate long term goals into short term tasks.
+
+Examples: issue branch, function branch, figure branch, documentation branch
+
+## Branching | Commits vs branches
+
+Commits are checkpoints for sub-tasks, often no more than 10 lines of code. 
+
+Topic branches are checkpoints for tasks, with one or more commit.
+
+```{bash eval = FALSE, echo = TRUE}
+git checkout -b quality_control
+
+git add check_microarray_data.R
+
+git commit -m "function to create
+tibble from microarray data"
+
+git commit -am "ggplot functions to display raw data"
+```
+
+## Branching | Where am I?
+
+```{css, echo=FALSE}
+.watch-out {
+  background-color: lightgreen;
+  font-weight: bold;
+  color: white;
+}
+```
+
+```{bash eval=FALSE, echo =TRUE}
+git branch
+```
+```{bash eval=FALSE, echo =TRUE, class.source = "watch-out"}
+  master 
+```
+```{bash eval=FALSE, echo =TRUE}
+git branch -a
+```
+```{bash eval=FALSE, echo =TRUE, class.source = "watch-out"}
+  master
+  remotes/upstream/master
+  remotes/upstream/staging
+```
+
+## Branching | Local vs remote
+
+GitHub is an amazing collaborative tool, but significantly complicates code management.
+
+Branches and commits will appear on the remote repo that are not on your local repo (and vice versa)
+
+This multiplies again if you originally forked from someone else!
+
+## Branching | Tips for code hygiene
+
+- Don't commit unfinished code and merge incomplete branches
+
+- Update your main branch everyday (typically using git rebase)
+
+- Keep topic branches short and merge-delete often!
+
+- Ensure commits are made in relevant branches
+
+## Troubleshooting | Stashing
+
+```{bash echo=TRUE, eval=FALSE}
+git stash [push]
+```
+
+Reverts the code back to the last commit and saves changes in temp file.
+
+Perfect for when you realise you're working in the wrong branch.
+
+Swap to right branch and pop the changes back
+
+```{bash echo=TRUE, eval=FALSE}
+git checkout other_branch
+git stash pop
+```
+
+## Troubleshooting | Reverting and cherrypicking
+
+```{bash echo=TRUE, eval=FALSE}
+git revert e8cc44d3ce4b01fb2d211bffec0c69cbaa0d80f4
+```
+
+Eventually you will accidentally commit a bug into your branch and need to remove it.
+
+```{bash echo=TRUE, eval=FALSE}
+git cherry-pick e8cc44d3ce4b01fb2d211bffec0c69cbaa0d80f4
+```
+
+Some cases my require you to select exactly which commits to merge (rather than a whole branch)
+
+## Troubleshooting | Helpful guides
+
+Git cheatsheet
+
+[https://education.github.com/git-cheat-sheet-education.pdf](https://education.github.com/git-cheat-sheet-education.pdf)
+
+Git documentation
+
+[https://git-scm.com/doc](https://git-scm.com/doc)
+
+GitHub Guides
+
+[https://guides.github.com/](https://guides.github.com/)
+
+## fin
 
 * 10min branching! tying into how the lab website works (SAM) 
   - how & why to do branches
@@ -230,18 +375,6 @@ knitr::include_graphics("https://i.kym-cdn.com/entries/icons/original/000/005/51
   - why do we fork the website?
   - issue-focussed branches (e.g. if issue created in task)
   - + 1 slide on how to workflow for a paper (Sam & Jamie's experiences)
-
-## Troubleshooting
-
-* last 10 mins or so: troubleshooting: (SAM) 
-  - what to do if it goes wrong? (can skip talking about some of this if we run out of time but want it on slides at least)
-  - what if you're working in the wrong branch??!?
-  - what to do if you want to push fewer changes than you committed?
-  - how to revert if things go wrong? 
-  - git cherrypicking?
-  - use of git stash
-  - here's some additional resources
-  ? Recorded walkthrough of here are some useful commands 
 
 ## Questions
 
