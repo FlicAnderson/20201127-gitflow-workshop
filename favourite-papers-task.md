@@ -346,7 +346,11 @@ We do that using a `pull request` which is best done through GitHub, rather than
 
 You may have noticed a huge green button saying "Compare and Pull Request" in your new favourite paper branch on your fork. CLICK IT!
 
+![](wallacelabwebsite_pullrequestbutton.png)
+
 This will take you to a page titled "Open a pull request".
+
+![](iamges/wallacelabwebsite_pullrequestpage.png)
 
 There are some drop down boxes we need to pay attention to, and a big text box, similar to an issue ticket.
 
@@ -363,9 +367,23 @@ Below, add a bit of information about the changes that are included in your pull
 
 Then, press the big green "Create Pull Request" button!
 
-You've done it!
-
 - [x] make pull request to Edward's repo (check it's "staging" branch).
+
+You've now completed all the steps in the git workflow!
+
+Here's the summary again:
+
+- [x] fork the website in github (it copies all branches)
+- [x] clone (download) the fork to your local computer
+- [x] make branch (e.g."sams-favourite-paper")
+- [x] make edits to "blog/_posts/2020-11-26-favourite-papers.md"
+- [x] git add blog file
+- [x] git commit blog file with helpful message
+- [x] git push to your github (to remote)
+- [x] check on github the changes are there
+- [x] make pull request to Edward's repo (check it's "staging" branch)
+
+**Fork, Clone, Branch, Edit, Add, Commit, Push, Pull Request**
 
 ## Next steps
 
