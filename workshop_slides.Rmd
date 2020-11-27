@@ -60,11 +60,11 @@ Source: [tl;drLegal](https://tldrlegal.com/license/mit-license)
 - [x] FLIC: set up a pre-workshop drop-in for after setup info sent out
 - [x] FLIC: make blogpost on my fork of lab website for workshop
 - [x] FLIC: slides about intro
+- [x] FLIC: slides about issue tickets
 
 <div class="red2">
 - [ ] FLIC: slides about task
 - [ ] FLIC: slides about workflow
-- [ ] FLIC: slides about issue tickets
 </div>
 
 # Outline: 
