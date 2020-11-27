@@ -63,8 +63,8 @@ Source: [tl;drLegal](https://tldrlegal.com/license/mit-license)
 - [x] FLIC: slides about issue tickets
 
 <div class="red2">
-- [ ] FLIC: slides about task
-- [ ] FLIC: slides about workflow
+- [x] FLIC: slides about task
+- [x] FLIC: slides about workflow
 </div>
 
 # Outline: 
@@ -84,7 +84,7 @@ Source: [tl;drLegal](https://tldrlegal.com/license/mit-license)
 * The Git Workflow (FLIC) 
 * Favourite Papers Lab Website Task (FLIC) 
 * Issue Tickets, Bells & Whistles (FLIC) 
-* Branching 
+* Branching (SAM)
 * Writing Papers (SAM) 
 * Troubleshooting: (SAM) 
 * Questions
@@ -111,6 +111,25 @@ It can be used via *Command Line* (the terminal!) or via a *Graphical User Inter
 * Or `pull` changes down (yours or someone else's!) and `merge` them with your local copies. 
 * Contribute to others' work via a `pull request` 
 
+## Git Workflow {.flexbox .vcenter}
+
+Fork
+
+Clone
+
+Branch
+
+Edit
+
+Add
+
+Commit
+
+Push
+
+Pull Request
+
+
 ## Git Workflow
 
 <div class="centered">
@@ -129,11 +148,6 @@ Be consise & consistent!
 * WHERE (e.g. filename, function name, section of paper, variable)
 
 `git commit -m "add Flic's favourite paper to '2020-11-26-favourite-papers.md'"`
-
-
-## How/When To Pull Request
-
-Fork, Clone, Branch, Edit, Add, Commit, Push, Pull Request
 
 ## Favourite Papers Task
 
@@ -172,7 +186,7 @@ Fear not! There's a first time for all of us.
 
 Here's how to get started!
 
-[Bitly Link](TBC)
+[Bitly Link bit.ly/fave-papers-forking](https://bit.ly/fave-papers-forking)
 
 # Favourite Papers Task
 
@@ -190,7 +204,7 @@ Here's how to get started!
 
 ## Favourite Papers Steps | *Fork, Clone, Branch, Edit, Add, Commit, Push, Pull Request*
 
-[Bitly Link](TBC)
+[Bitly Link: bit.ly/favourite-papers-task](https://bit.ly/favourite-papers-task)
 
 ## Favourite Papers Next Steps | *Check Pull Request & Merge*
 
@@ -205,6 +219,8 @@ knitr::include_graphics("https://i.kym-cdn.com/entries/icons/original/000/005/51
 </div>
 
 * http://nedroid.com/2009/05/party-cat-full-series/
+
+# Issue Tickets 
 
 ## Issue Tickets 
 
@@ -226,30 +242,8 @@ knitr::include_graphics("https://i.kym-cdn.com/entries/icons/original/000/005/51
 * add Add the most useful labels / create your own
 * check with people before randomly assigning them issues! :)
 
-## Branching & Forks
+# Branching & Forks
 
-* 10min branching! tying into how the lab website works (SAM) 
-  - how & why to do branches
-  - how & why to check which branch you're in
-  - why does the lab website have a 'staging' branch? what's this master branch thing all about? 
-  - why do we fork the website?
-  - issue-focussed branches (e.g. if issue created in task)
-  - + 1 slide on how to workflow for a paper (Sam & Jamie's experiences)
+# Troubleshooting
 
-## Troubleshooting
-
-* last 10 mins or so: troubleshooting: (SAM) 
-  - what to do if it goes wrong? (can skip talking about some of this if we run out of time but want it on slides at least)
-  - what if you're working in the wrong branch??!?
-  - what to do if you want to push fewer changes than you committed?
-  - how to revert if things go wrong? 
-  - git cherrypicking?
-  - use of git stash
-  - here's some additional resources
-  ? Recorded walkthrough of here are some useful commands 
-
-## Questions
-
-* (any time left?) Questions?
-  - if any additional practical Qs, could set up a work-through-it time?
-  - if any conceptual questions etc, try and answer in time left.
+# Questions
