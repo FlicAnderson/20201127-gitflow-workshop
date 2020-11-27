@@ -203,12 +203,31 @@ knitr::include_graphics("https://i.kym-cdn.com/entries/icons/original/000/005/51
 
 ## Issue Tickets 
 
-* 10min issue tickets & tagging them & stuff (FLIC) 
-  - slide with "when to make an issue ticket?"
-  - " 1 ticket, or two?" - how to decide where 1 issue stops and another begins?
-  - tagging folks in
-  - labels
-  - ?'kanban'? <- probably a step too far, ignore this!
+Issue Tickets are a super useful GitHub tool. 
+
+Allows you to create 'issues' within a repo, where you can add notes.
+
+Markdown format - can include code snippets, formatting, emojis, all the good stuff!
+
+You can tag in other GitHub users to include them in the conversation
+`@FlicAnderson, have you seen this error before?`
+
+You can also assign labels to issues like "help wanted", "bug", "question". People can filter by these, but they're handy to visually flag up what kind of issue it is.
+
+You can link issues with pull requests, or keep them separate. 
+
+Once the issue is solved, you can mark it as closed!
+
+## How To Write A Good Issue Ticket
+
+Title: Clear and concise description of the problem!
+
+Text: 
+Add as much detail you can on how you found the issue, what you've done already to fix or investigate it, ideas about the issue, potentially tag in colleagues who might be able to help or offer insights, or answer any questions, and track progress. Remember to update the issue regularly as progress happens!  Think about what people would need to know to get up to speed with this problem or new feature. You can also refer to other issues in the repo using the hashtag followed by their issue number e.g. `#42`. This creates a hyperlink automatically to that issue. 
+
+Labels: Add the most useful ones, or create your own labels to track specific groups of issues
+
+Assignees: It's probably polite to check with people before randomly assigning them tasks! :)
 
 ## Branching & Forks
 
