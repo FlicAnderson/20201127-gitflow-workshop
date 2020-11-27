@@ -212,7 +212,7 @@ knitr::include_graphics("https://i.kym-cdn.com/entries/icons/original/000/005/51
 
 <div class="centered">
 ```{r, out.width = "700"}
-knitr::include_graphics("https://github.com/FlicAnderson/20201127-gitflow-workshop/tree/main/images/branching_image.svg")
+knitr::include_graphics("https://raw.githubusercontent.com/DimmestP/20201127-gitflow-workshop/sam_slide/images/branching_image.svg")
 ``` 
 </div>
 
