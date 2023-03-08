@@ -1,7 +1,7 @@
 # 20201127-gitflow-workshop
 
-Content and notes for workshop on Git Flow for Wallace Lab on Friday 27th Nov 2020. 
-Written by @FlicAnderson and @DimmestP. 
+Content and notes for workshop on Git Flow for the [Wallace Lab](https://ewallace.github.io/) on Friday 27th Nov 2020. 
+Written by [@FlicAnderson](https://github.com/FlicAnderson) and [@DimmestP](https://github.com/DimmestP). 
 
 ## Outline: 
 
