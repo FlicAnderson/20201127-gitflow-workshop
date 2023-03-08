@@ -30,29 +30,35 @@ knitr::opts_chunk$set(echo = FALSE)
   }
 </style>
 
-## HOW TO (RE-)USE THIS MATERIAL
+## HOW TO (RE-)USE THIS MATERIAL  
 
-This is a `.html` presentation created in `R Markdown` with `ioslides`. 
+<font size="5">
+This is a `.html` presentation created in `R Markdown` with `ioslides`.   
 
-(It's been written in a [.Rmd](http://rmarkdown.rstudio.com) file, and we generated .html slides by 'knitting' it in Rstudio.)
+(It's been written in a [.Rmd](http://rmarkdown.rstudio.com) file, and we generated .html slides by 'knitting' it in Rstudio.)  
 
-You can check out the code used to make these slides at the [Workshop repo](https://github.com/FlicAnderson/20201127-gitflow-workshop) on Github, and adapt it for your own presentations if you like - we've got a MIT Licence on the repo, which means: 
+**Check out the code used to make these slides at the [Workshop repo](https://github.com/FlicAnderson/20201127-gitflow-workshop) on Github.** 
+
+*To view the slides from that repo:* view the PDF file, or download the raw html file (or clone the whole repo!) locally \& open in a browser.  
+
+You can also adapt these slides for your own presentations if you like - we've got a MIT Licence on the repo, which means: 
 
 *"Basically, you can do whatever you want as long as you include the original copyright and license notice in any copy of the software/source."*
-
 Source: [tl;drLegal](https://tldrlegal.com/license/mit-license)
+</font> 
+
 
 # Outline: 
 
 ## Outline: 
 
-* Intro to Git, GitHub  (FLIC) 
-* The Git Workflow (FLIC) 
-* Favourite Papers Lab Website Task (FLIC) 
-* Issue Tickets, Bells & Whistles (FLIC) 
-* Branching (SAM)
-* Writing Papers (SAM) 
-* Troubleshooting: (SAM) 
+* Intro to Git, GitHub   
+* The Git Workflow   
+* Favourite Papers Lab Website Task   
+* Issue Tickets, Bells & Whistles   
+* Branching   
+* Writing Papers   
+* Troubleshooting  
 * Questions
 
 # Intro:
